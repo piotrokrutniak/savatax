@@ -1,0 +1,16 @@
+{
+    "pl-PL":{
+        "lblContact": "Kontakt",
+        "lblOffer": "Oferta",
+        "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
+        "lblSliderP1": "Świadczymy kompleksowe usługi księgowe, podatkowe i doradcze dla małych i średnich firm.",
+        "lblSliderP2": "Skontaktuj się z nami i dowiedz się, co możemy zrobić dla Twojej firmy!",
+        "section-1": {
+            "header": "Rachunkowość bez stresu",
+            "paragraph`": "Jeśli szukasz profesjonalnej i rzetelnej firmy, która zajmie się Twoją rachunkowością, podatkami, finansami i prawem, to trafiłeś w dobre miejsce. Nasza firma doradcza oferuje kompleksowe i indywidualne rozwiązania dla małych i średnich przedsiębiorstw z różnych branż. ",
+        }
+    },
+    "en-US":{
+        "lblContact": "Contact"
+    }
+}
