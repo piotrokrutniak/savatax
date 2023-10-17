@@ -94,14 +94,14 @@ function DropDown({languages, language, setLanguage, scrollY}:{languages: any[],
     return(
         <div className="relative">
 
-            <div className={`${scrollY > 0 ? "bg-black" : "bg-black/30"} w-20 p-3 md:p-3 rounded-lg text-white flex place-items-center gap-2 cursor-pointer justify-between max-md:text-sm`}
+            <div className={`${scrollY > 0 ? "bg-black" : "bg-black/20"} w-20 p-3 md:p-3 rounded-lg text-white flex place-items-center gap-2 cursor-pointer justify-between max-md:text-sm`}
                 onClick={() => setOpened(x => !x)}>
                 <div>
                     {language || "pl"}
                 </div>
                 <BsChevronDown className={opened ? "rotate-180 transition-all" : "transition-all"}/>
             </div>
-            <div className={`${opened ? "h-[80px]" : "h-0"} overflow-hidden w-full bg-white text-black shadow-lg absolute top-14 md:top-16 right-0 rounded-lg transition-all`}>
+            <div className={`${opened ? "h-[88px]" : "h-0"} overflow-hidden w-full bg-white text-black shadow-lg absolute top-14 md:top-16 right-0 rounded-lg transition-all`}>
                 {languages.map(x => <DropdownOption value={x.code} setLanguage={setLanguage} setOpened={setOpened}/>)}
             </div>
         </div>

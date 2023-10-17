@@ -54,7 +54,7 @@ export default function NavBar(){
                             </Button>
                         </Link>
                     </div>
-                    <DropDown languages={languages} language={language} setLanguage={setLanguage} scrollY={scrollY}/>
+                    <DropDown languages={languages} language={language} setLanguage={setLanguage}/>
                     <div className="md:hidden flex">
                         <FaBars className={`${scrollY > 0 ? "fill-black" : "fill-white"} h-10 w-10  cursor-pointer hover:fill-blue-400 active:opacity-80`} onClick={() => setShowMobile(true)}/>
                     </div>
@@ -87,21 +87,21 @@ export default function NavBar(){
     )
 }
 
-function DropDown({languages, language, setLanguage, scrollY}:{languages: any[], language: string, setLanguage: Dispatch<SetStateAction<"pl" | "en">>, scrollY: number}){
+function DropDown({languages, language, setLanguage}:{languages: any[], language: string, setLanguage: Dispatch<SetStateAction<"pl" | "en">>}){
     
     const [opened, setOpened] = useState<boolean>(false)
 
     return(
         <div className="relative">
 
-            <div className={`${scrollY > 0 ? "bg-black" : "bg-black/30"} w-20 p-3 md:p-3 rounded-lg text-white flex place-items-center gap-2 cursor-pointer justify-between max-md:text-sm`}
+            <div className="w-20 p-3 md:p-3 bg-black/10 rounded-lg text-white flex place-items-center gap-2 cursor-pointer justify-between max-md:text-sm"
                 onClick={() => setOpened(x => !x)}>
                 <div>
                     {language || "pl"}
                 </div>
                 <BsChevronDown className={opened ? "rotate-180 transition-all" : "transition-all"}/>
             </div>
-            <div className={`${opened ? "h-[80px]" : "h-0"} overflow-hidden w-full bg-white text-black shadow-lg absolute top-14 md:top-16 right-0 rounded-lg transition-all`}>
+            <div className={`${opened ? "h-[88px]" : "h-0"} overflow-hidden w-full bg-white text-black shadow-lg absolute top-14 md:top-16 right-0 rounded-lg transition-all`}>
                 {languages.map(x => <DropdownOption value={x.code} setLanguage={setLanguage} setOpened={setOpened}/>)}
             </div>
         </div>
