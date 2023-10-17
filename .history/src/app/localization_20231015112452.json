@@ -1,5 +1,5 @@
-{   
-    "pl":{
+{
+    "pl-PL":{
         "lblContact": "Kontakt",
         "lblOffer": "Oferta",
         "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
@@ -41,46 +41,7 @@
             "lblTextValidation": "Treść maila musi mieć przynajmniej 20 znaków."
         }
     },
-    "en":{
-        "lblContact": "Contact",
-        "lblOffer": "Offer",
-        "lblSliderHeader": "Trust professionals in the field of accounting.",
-        "lblSliderP1": "We provide a wide range of services to support small and medium-sized businesses, including accounting, tax, and advisory services.",
-        "lblSliderP2": "Get in touch with us and find out what we can do for your company!",
-        "section-1": {
-            "header": "Stress-free Accounting",
-            "paragraph-1": "We provide a wide range of services to support small and medium-sized businesses, including accounting, tax, and advisory services. Our team of qualified and experienced professionals is dedicated to providing individualized solutions for businesses in various industries.",
-            "paragraph-2": "Our goal is to help you achieve better results while providing you with peace of mind and security."
-        },
-        "section-2": {
-            "header": "Our services include:",
-            "cards": {
-                "card-1": "Bookkeeping and financial reporting",
-                "card-2": "Preparation of tax returns and settlements with tax authorities",
-                "card-3": "Tax advisory and optimization",
-                "card-4": "Financial analysis and budget planning",
-                "card-5": "Legal advice and contract management"
-            }
-        },
-        "section-3": {
-            "paragraph-1": "Our team consists of qualified and experienced specialists who possess the necessary certificates and authorizations.",
-            "paragraph-2": "We work in accordance with applicable regulations and professional standards, ensuring the confidentiality and security of our clients’ data.",
-            "paragraph-3": "Discover how we can help you unlock your business’s potential and make running it a breeze. Contact us today!",
-            "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
-        },
-        "section-contact": {
-            "header": "Contact Us",
-            "headerButton": "Direct Email"
-        },
-        "emailForm": {
-            "lblEmail": "Email Address",
-            "lblSubject": "Email Subject",
-            "lblText": "Email Content",
-            "phEmail": "email@example.com",
-            "phTextInput": "Start typing...",
-            "lblEmailValidation": "Email Address is required.",
-            "lblSubjectValidation": "Email subject must be at least 10 characters long.",
-            "lblTextValidation": "Email content must be at least 20 characters long."
-        }
+    "en-US":{
+        "lblContact": "Contact"
     }
 }

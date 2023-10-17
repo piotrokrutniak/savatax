@@ -5,15 +5,9 @@ import Button from "./button";
 import TextArea from "./textArea";
 import { FaPaperPlane } from "react-icons/fa";
 import PostEmail from "@/app/integration/gmail/postEmail";
-import translations from "@/app/localization.json"
-import { Localization } from "@/app/types";
+import Localization from "@/app/localization.json"
 
-
-
-export function EmailForm({language = "pl"}:{language?: string}){
-    
-    const localization: Localization = translations
-
+export function EmailForm({language = "pl-PL"}:{language?: string}){
     const [email, setEmail] = useState({
         from: "",
         to: "bdtrppn@gmail.com",
@@ -62,16 +56,16 @@ export function EmailForm({language = "pl"}:{language?: string}){
 
     return(
         <div className="flex flex-col gap-4">
-            <FormInput placeholder={localization[language].emailForm.phEmail} onChange={UpdateEmail} label={localization[language].emailForm.lblEmail} 
+            <FormInput placeholder={Localization[language].emailForm.phEmail} onChange={UpdateEmail} label={Localization[language].emailForm.lblEmail} 
                 validationResult={validation.from} 
-                validationMessage={localization[language].emailForm.lblEmailValidation}/>
-            <FormInput placeholder={localization[language].emailForm.phTextInput} onChange={UpdateTitle} label={localization[language].emailForm.lblSubject} 
+                validationMessage={Localization[language].emailForm.lblEmailValidation}/>
+            <FormInput placeholder={Localization[language].emailForm.phTextInput} onChange={UpdateTitle} label={Localization[language].emailForm.lblSubject} 
                 validationResult={validation.subject} 
-                validationMessage={localization[language].emailForm.lblSubjectValidation}/>
+                validationMessage={Localization[language].emailForm.lblSubjectValidation}/>
             {/* <FormInput placeholder="Zacznij pisać..." onChange={UpdateEmail} label={"Treść Maila"}/> */}
-            <TextArea placeholder={localization[language].emailForm.phTextInput} onChange={UpdateBody} label={localization[language].emailForm.lblText} 
+            <TextArea placeholder={Localization[language].emailForm.phTextInput} onChange={UpdateBody} label={Localization[language].emailForm.lblText} 
                 validationResult={validation.text} 
-                validationMessage={localization[language].emailForm.lblTextValidation}/>
+                validationMessage={Localization[language].emailForm.lblTextValidation}/>
             <Button className="w-fit px-4 text-lg ml-auto mt-4 mr-0 text-white"
                 onClick={Submit}>
                 Wyślij <FaPaperPlane/>

@@ -7,7 +7,7 @@ import { EmailForm } from './components/generic/emailForm'
 import Link from 'next/link'
 
 export default function Home() {
-  const language = "pl"
+  const language = "pl-PL"
   return (
     <div className="flex flex-col relative -top-20 gap-32 scroll-smooth">
       <section className="w-full h-screen-3/5 bg-gradient-to-t top-0 from-black to-black/90 relative text-white">
@@ -84,7 +84,7 @@ export default function Home() {
             </h2>
           </Link>
         </div>
-        <EmailForm language={language}/>
+        <EmailForm/>
       </section>
     </div>
   )

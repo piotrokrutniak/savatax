@@ -1,13 +1,15 @@
 import Image from 'next/image'
-import SplashArt from '../../public/media/8.jpg'
-import Button from './components/generic/button'
+import SplashArt from '../../../../public/media/8.jpg'
+import Button from '../../components/generic/button'
 import { FaBalanceScale, FaBook,  FaChartPie, FaEnvelope, FaFileInvoiceDollar, FaPiggyBank } from 'react-icons/fa'
 import Localization from "@/app/localization.json"
-import { EmailForm } from './components/generic/emailForm'
+import { EmailForm } from '../../components/generic/emailForm'
 import Link from 'next/link'
 
-export default function Home() {
-  const language = "pl"
+export default function Home(pageData: {params: {countryCode: string}, searchParams: any}) {
+  const language = "en-US"
+
+  console.log(pageData.params.countryCode)
   return (
     <div className="flex flex-col relative -top-20 gap-32 scroll-smooth">
       <section className="w-full h-screen-3/5 bg-gradient-to-t top-0 from-black to-black/90 relative text-white">

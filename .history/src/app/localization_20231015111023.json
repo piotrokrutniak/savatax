@@ -1,0 +1,37 @@
+{
+    "pl-PL":{
+        "lblContact": "Kontakt",
+        "lblOffer": "Oferta",
+        "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
+        "lblSliderP1": "Świadczymy kompleksowe usługi księgowe, podatkowe i doradcze dla małych i średnich firm.",
+        "lblSliderP2": "Skontaktuj się z nami i dowiedz się, co możemy zrobić dla Twojej firmy!",
+        "section-1": {
+            "header": "Rachunkowość bez stresu",
+            "paragraph-1": "Jeśli szukasz profesjonalnej i rzetelnej firmy, która zajmie się Twoją rachunkowością, podatkami, finansami i prawem, to trafiłeś w dobre miejsce. Nasza firma doradcza oferuje kompleksowe i indywidualne rozwiązania dla małych i średnich przedsiębiorstw z różnych branż. ",
+            "paragraph-2": "Naszym celem jest zapewnienie Ci spokoju i bezpieczeństwa, a także pomóc Ci w osiąganiu lepszych wyników."
+        },
+        "section-2": {
+            "header": "Nasza oferta obejmuje między innymi:",
+            "cards": {
+                "card-1": "prowadzenie księgowości i sprawozdawczości finansowej",
+                "card-2": "sporządzanie deklaracji podatkowych i rozliczeń z urzędami skarbowymi",
+                "card-3": "doradztwo podatkowe i optymalizacja podatkowa",
+                "card-4": "analiza finansowa i planowanie budżetowe",
+                "card-5": "doradztwo prawne i obsługa umów"
+            }
+        },
+        "section-3": {
+            "paragraph-1": "Nasza firma składa się z wykwalifikowanych i doświadczonych specjalistów, którzy posiadają odpowiednie certyfikaty i uprawnienia. ",
+            "paragraph-2": "Pracujemy zgodnie z obowiązującymi przepisami i standardami zawodowymi, dbając o poufność i bezpieczeństwo danych naszych klientów.",
+            "paragraph-3": "Nie zwlekaj - skorzystaj z naszej oferty już dziś i zobacz, jak możemy ułatwić Ci prowadzenie Twojego biznesu.",
+            "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
+        },
+        "section-contact": {
+            "header-1": "Skontaktuj się z nami",
+            "headerButton": "Napisz bezpośrednio"
+        }
+    },
+    "en-US":{
+        "lblContact": "Contact"
+    }
+}

@@ -1,8 +1,12 @@
 import nodemailer from "nodemailer"
 import { Email } from "../types";
+import OAuthKey  from "@/app/savatax-key.json"
 import secret from "@/app/client_secret.json"
 import config from "@/app/config.json"
+import { FaCoins } from "react-icons/fa";
 import { CSSProperties } from "react";
+
+
 
 // Temp key
 
@@ -21,6 +25,8 @@ import { CSSProperties } from "react";
 //       },
 // });
 
+
+
 // transport.set("oauth2_provision_cb", (user, renew, callback) => {
 //     let accessToken = "ya29.a0AfB_byA1WeRRklNyV4l6eJMb0fZncW06bcUyku96YfYiQDtzeWTIYauSCbMf2aOB9HFQFvOnJy6UDMiJGs4RP1u8dydeM3lsVYOcfZmhpzh2Uhw7hdJteQOxm5exMzdTU2rwGxDRUE94FsluG6KgR9LNJgYW7uOurD5qaCgYKAZ4SARMSFQGOcNnCA1qzP3K3NjCA0pMQgPMS7A0171",
 //     if (!accessToken) {
@@ -29,6 +35,7 @@ import { CSSProperties } from "react";
 //       return callback(null, accessToken);
 //     }
 //   });
+
 
 const transport = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -61,9 +68,12 @@ export async function SendConfirmation(email: Email){
         from: "piotrokrutniak@gmail.com",
         to: email.from,
         subject: "Contact Form Confirmation",
+        //html: "We've received your email inquiry, we'll get in touch with you soon. <br/> Best Regards",
         html: ConfirmationBody(email),
     })
 }
+
+
 
 const ConfirmationBody = (email: Email) => {
     return(`
@@ -79,8 +89,10 @@ const ConfirmationBody = (email: Email) => {
                 Savatax
             </div>
         </div>`
+        
     )
 }
+
 
 export default function Confirmation(email: Email){
     return(
@@ -97,6 +109,7 @@ export default function Confirmation(email: Email){
         </div>
     )
 }
+
 
 const WrapperStyle: CSSProperties = {
 "padding": "2rem;",
@@ -117,5 +130,6 @@ const LogoStyle: CSSProperties = {
 "color": "transparent;",
 "backgroundClip": "text;",
 "backgroundImage": "background-image: linear-gradient(to right, var(--tw-gradient-stops));",
+//"backgroundColor": "#93C5FD;",
 "backgroundColor": "#60A5FA;",
 }

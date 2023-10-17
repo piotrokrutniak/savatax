@@ -1,8 +1,12 @@
 import nodemailer from "nodemailer"
 import { Email } from "../types";
+import OAuthKey  from "@/app/savatax-key.json"
 import secret from "@/app/client_secret.json"
 import config from "@/app/config.json"
+import { FaCoins } from "react-icons/fa";
 import { CSSProperties } from "react";
+
+
 
 // Temp key
 
@@ -29,6 +33,7 @@ import { CSSProperties } from "react";
 //       return callback(null, accessToken);
 //     }
 //   });
+
 
 const transport = nodemailer.createTransport({
     host: "smtp.gmail.com",
@@ -65,6 +70,8 @@ export async function SendConfirmation(email: Email){
     })
 }
 
+
+
 const ConfirmationBody = (email: Email) => {
     return(`
         <div style="padding: 1rem;">
@@ -81,6 +88,7 @@ const ConfirmationBody = (email: Email) => {
         </div>`
     )
 }
+
 
 export default function Confirmation(email: Email){
     return(

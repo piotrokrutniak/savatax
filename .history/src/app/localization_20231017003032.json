@@ -1,5 +1,5 @@
 {   
-    "pl":{
+    "pl-PL":{
         "lblContact": "Kontakt",
         "lblOffer": "Oferta",
         "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
@@ -41,7 +41,7 @@
             "lblTextValidation": "Treść maila musi mieć przynajmniej 20 znaków."
         }
     },
-    "en":{
+    "en-US":{
         "lblContact": "Contact",
         "lblOffer": "Offer",
         "lblSliderHeader": "Trust professionals in the field of accounting.",

@@ -70,7 +70,3 @@ export type Comment = {
 export type CountryCode = {
     code: "pl-PL" | "en-US"
 }
-
-export interface Localization {
-    [key: string]: any;
-  }

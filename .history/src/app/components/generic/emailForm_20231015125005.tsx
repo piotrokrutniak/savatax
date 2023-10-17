@@ -10,7 +10,7 @@ import { Localization } from "@/app/types";
 
 
 
-export function EmailForm({language = "pl"}:{language?: string}){
+export function EmailForm({language = "pl-PL"}:{language?: string}){
     
     const localization: Localization = translations
 

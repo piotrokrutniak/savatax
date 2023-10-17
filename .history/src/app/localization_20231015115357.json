@@ -1,5 +1,5 @@
-{   
-    "pl":{
+{
+    "pl-PL":{
         "lblContact": "Kontakt",
         "lblOffer": "Oferta",
         "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
@@ -41,7 +41,7 @@
             "lblTextValidation": "Treść maila musi mieć przynajmniej 20 znaków."
         }
     },
-    "en":{
+    "en-US":{
         "lblContact": "Contact",
         "lblOffer": "Offer",
         "lblSliderHeader": "Trust professionals in the field of accounting.",
@@ -63,24 +63,24 @@
             }
         },
         "section-3": {
-            "paragraph-1": "Our team consists of qualified and experienced specialists who possess the necessary certificates and authorizations.",
-            "paragraph-2": "We work in accordance with applicable regulations and professional standards, ensuring the confidentiality and security of our clients’ data.",
-            "paragraph-3": "Discover how we can help you unlock your business’s potential and make running it a breeze. Contact us today!",
+            "paragraph-1": "Nasza firma składa się z wykwalifikowanych i doświadczonych specjalistów, którzy posiadają odpowiednie certyfikaty i uprawnienia. ",
+            "paragraph-2": "Pracujemy zgodnie z obowiązującymi przepisami i standardami zawodowymi, dbając o poufność i bezpieczeństwo danych naszych klientów.",
+            "paragraph-3": "Nie zwlekaj - skorzystaj z naszej oferty już dziś i zobacz, jak możemy ułatwić Ci prowadzenie Twojego biznesu.",
             "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
         },
         "section-contact": {
-            "header": "Contact Us",
-            "headerButton": "Direct Email"
+            "header": "Skontaktuj się z nami",
+            "headerButton": "Napisz bezpośrednio"
         },
         "emailForm": {
-            "lblEmail": "Email Address",
-            "lblSubject": "Email Subject",
-            "lblText": "Email Content",
+            "lblEmail": "Adres Email",
+            "lblSubject": "Temat Maila",
+            "lblText": "Treść Maila",
             "phEmail": "email@example.com",
-            "phTextInput": "Start typing...",
-            "lblEmailValidation": "Email Address is required.",
-            "lblSubjectValidation": "Email subject must be at least 10 characters long.",
-            "lblTextValidation": "Email content must be at least 20 characters long."
+            "phTextInput": "Zacznij pisać...",
+            "lblEmailValidation": "Adres email wymagany.",
+            "lblSubjectValidation": "Tytuł maila musi mieć przynajmniej 10 znaków.",
+            "lblTextValidation": "Treść maila musi mieć przynajmniej 20 znaków."
         }
     }
 }
