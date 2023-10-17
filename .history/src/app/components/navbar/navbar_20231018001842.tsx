@@ -16,10 +16,6 @@ export default function NavBar(){
     const scrollY = useScrollPosition()
 
     useEffect(() => {
-        return ParseLanguage()
-    }, [])
-    
-    function ParseLanguage(){
         let lang = getURL().slice(1, 3)
 
         if (lang == "pl" || lang == "en"){
@@ -27,6 +23,10 @@ export default function NavBar(){
         }
 
         return setLanguage("pl")
+    }, [])
+    
+    function ParseLanguage(){
+
     }
 
     return(
@@ -35,8 +35,7 @@ export default function NavBar(){
                 <div className="p-2 m-auto w-full flex max-w-7xl justify-between items-center">
                     <Link href="/">
                     <div className="flex gap-1 h-fit select-none cursor-pointer active:opacity-80 active:pb-0 
-                            border-opacity-0 transition-all group"
-                            onClick={() => setLanguage("pl")}>
+                            border-opacity-0 transition-all group">
                         <FaCoins className={`${scrollY > 0 ? "fill-blue-400 transition-all" : "fill-white"} h-full w-6 mt-1  group-hover:fill-blue-300 transition-opacity`}/>
                         <h1 className={`${scrollY > 0 ? " bg-blue-400 " : "bg-white"} text-2xl font-bold bg-clip-text text-transparent group-hover:bg-gradient-to-r from-blue-300 to-blue-400 transition-all`}>Savatax</h1>
                     </div>
@@ -87,9 +86,10 @@ export default function NavBar(){
     )
 }
 
-function DropDown({languages, language, setLanguage}:{languages: any[], language: string, setLanguage: Dispatch<SetStateAction<"pl" | "en">>}){
+function DropDown({languages, language, setLanguage}:{languages: any[], language: string, setLanguage: Dispatch<SetStateAction<string>>}){
     
     const [opened, setOpened] = useState<boolean>(false)
+    const [label, setLabel] = useState<string>(language)
 
     return(
         <div className="relative">
@@ -97,23 +97,26 @@ function DropDown({languages, language, setLanguage}:{languages: any[], language
             <div className="w-20 p-3 md:p-3 bg-black rounded-lg text-white flex place-items-center gap-2 cursor-pointer justify-between max-md:text-sm"
                 onClick={() => setOpened(x => !x)}>
                 <div>
-                    {language || "pl"}
+                    {label || "Polish"}
                 </div>
                 <BsChevronDown className={opened ? "rotate-180" : ""}/>
             </div>
             <div className={`${opened ? "h-[88px]" : "h-0"} overflow-hidden w-full bg-white text-black shadow-lg absolute top-16 right-0 rounded-lg transition-all`}>
-                {languages.map(x => <DropdownOption value={x.code} setLanguage={setLanguage} setOpened={setOpened}/>)}
+                {languages.map(x => <DropdownOption setLabel={setLabel} label={x.label} value={x.code} setLanguage={setLanguage} setOpened={setOpened}/>)}
             </div>
         </div>
     )
 }
 
-function DropdownOption({value, setLanguage, setOpened}:{
-    value: "pl" | "en",   
-    setLanguage: Dispatch<SetStateAction<"pl" | "en">>, 
+function DropdownOption({value, label, setLabel, setLanguage, setOpened}:{
+    value: string, 
+    label: string, 
+    setLabel: Dispatch<SetStateAction<string>>, 
+    setLanguage: Dispatch<SetStateAction<string>>, 
     setOpened: Dispatch<SetStateAction<boolean>>
 }){
     function HandleClick(){
+        setLabel(value)
         setLanguage(value)
         setOpened(false)
     }

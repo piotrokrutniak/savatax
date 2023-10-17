@@ -90,6 +90,7 @@ export default function NavBar(){
 function DropDown({languages, language, setLanguage}:{languages: any[], language: string, setLanguage: Dispatch<SetStateAction<"pl" | "en">>}){
     
     const [opened, setOpened] = useState<boolean>(false)
+    const [label, setLabel] = useState<string>(language)
 
     return(
         <div className="relative">
@@ -97,19 +98,21 @@ function DropDown({languages, language, setLanguage}:{languages: any[], language
             <div className="w-20 p-3 md:p-3 bg-black rounded-lg text-white flex place-items-center gap-2 cursor-pointer justify-between max-md:text-sm"
                 onClick={() => setOpened(x => !x)}>
                 <div>
-                    {language || "pl"}
+                    {label || "Polish"}
                 </div>
                 <BsChevronDown className={opened ? "rotate-180" : ""}/>
             </div>
             <div className={`${opened ? "h-[88px]" : "h-0"} overflow-hidden w-full bg-white text-black shadow-lg absolute top-16 right-0 rounded-lg transition-all`}>
-                {languages.map(x => <DropdownOption value={x.code} setLanguage={setLanguage} setOpened={setOpened}/>)}
+                {languages.map(x => <DropdownOption setLabel={setLabel} label={x.label} value={x.code} setLanguage={setLanguage} setOpened={setOpened}/>)}
             </div>
         </div>
     )
 }
 
-function DropdownOption({value, setLanguage, setOpened}:{
-    value: "pl" | "en",   
+function DropdownOption({value, label, setLabel, setLanguage, setOpened}:{
+    value: string, 
+    label: string, 
+    setLabel: Dispatch<SetStateAction<string>>, 
     setLanguage: Dispatch<SetStateAction<"pl" | "en">>, 
     setOpened: Dispatch<SetStateAction<boolean>>
 }){
