@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react"
+import { Dispatch, SetStateAction, useState } from "react"
 
 export default function Switch({value = false, setValue, className = "", label, switchColor}: {
     value?: boolean | undefined | void; 
