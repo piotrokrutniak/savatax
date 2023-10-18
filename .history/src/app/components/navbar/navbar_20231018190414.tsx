@@ -102,7 +102,7 @@ function DropDown({languages, language, setLanguage, scrollY}:{languages: any[],
                 <BsChevronDown className={opened ? "rotate-180 transition-all" : "transition-all"}/>
             </div>
             <div className={`${opened ? "h-[80px]" : "h-0"} overflow-hidden w-full bg-white text-black shadow-lg absolute top-14 md:top-16 right-0 rounded-lg transition-all`}>
-                {languages.map((x, key) => <DropdownOption value={x.code} key={key} setLanguage={setLanguage} setOpened={setOpened}/>)}
+                {languages.map(x => <DropdownOption value={x.code} setLanguage={setLanguage} setOpened={setOpened}/>)}
             </div>
         </div>
     )
