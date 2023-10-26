@@ -1,0 +1,98 @@
+{   
+    "pl":{
+        "lblContact": "Kontakt",
+        "lblOffer": "Oferta",
+        "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
+        "lblSliderP1": "Świadczymy kompleksowe usługi księgowe, podatkowe i doradcze dla małych i średnich firm.",
+        "lblSliderP2": "Skontaktuj się z nami i dowiedz się, co możemy zrobić dla Twojej firmy!",
+        "section-about":{
+            "header": "O nas",
+            "p-1": "Jesteśmy Savatax - firmą rachunkową z Warszawy, która chce Ci pomóc w prowadzeniu Twojego biznesu. Zajmujemy się rachunkowością małych i średnich firm z różnych branż i wiemy, jak ważne jest dla Ciebie, aby mieć sprawy finansowe pod kontrolą. Dlatego oferujemy Ci pełen zakres usług rachunkowych, takich jak księgowość, rozliczenia podatkowe, kadry i płace, doradztwo finansowe i audyt.",
+            "p-2": "Nasz zespół to sami pasjonaci rachunkowości, którzy mają duże doświadczenie i stale się szkolą. Używamy nowoczesnych technologii i systemów informatycznych, które zapewniają bezpieczeństwo i szybkość obsługi. Jesteśmy elastyczni i dostosowujemy się do Twoich potrzeb i oczekiwań."
+        },
+        "section-1": {
+            "header": "Rachunkowość bez stresu",
+            "paragraph-1": "Jeśli szukasz profesjonalnej i rzetelnej firmy, która zajmie się Twoją rachunkowością, podatkami, finansami i prawem, to trafiłeś w dobre miejsce. Nasza firma doradcza oferuje kompleksowe i indywidualne rozwiązania dla małych i średnich przedsiębiorstw z różnych branż. ",
+            "paragraph-2": "Naszym celem jest zapewnienie Ci spokoju i bezpieczeństwa, a także pomóc Ci w osiąganiu lepszych wyników."
+        },
+        "section-2": {
+            "header": "Nasza oferta obejmuje między innymi:",
+            "cards": {
+                "card-1": "prowadzenie księgowości i sprawozdawczości finansowej",
+                "card-2": "sporządzanie deklaracji podatkowych i rozliczeń z urzędami skarbowymi",
+                "card-3": "doradztwo podatkowe i optymalizacja podatkowa",
+                "card-4": "analiza finansowa i planowanie budżetowe",
+                "card-5": "doradztwo prawne i obsługa umów"
+            }
+        },
+        "section-3": {
+            "paragraph-1": "Nasza firma składa się z wykwalifikowanych i doświadczonych specjalistów, którzy posiadają odpowiednie certyfikaty i uprawnienia. ",
+            "paragraph-2": "Pracujemy zgodnie z obowiązującymi przepisami i standardami zawodowymi, dbając o poufność i bezpieczeństwo danych naszych klientów.",
+            "paragraph-3": "Nie zwlekaj - skorzystaj z naszej oferty już dziś i zobacz, jak możemy ułatwić Ci prowadzenie Twojego biznesu.",
+            "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
+        },
+        "section-contact": {
+            "header": "Skontaktuj się z nami",
+            "headerButton": "Napisz bezpośrednio"
+        },
+        "emailForm": {
+            "lblEmail": "Adres Email",
+            "lblSubject": "Temat Maila",
+            "lblText": "Treść Maila",
+            "phEmail": "email@example.com",
+            "phTextInput": "Zacznij pisać...",
+            "lblEmailValidation": "Adres email wymagany.",
+            "lblSubjectValidation": "Tytuł maila musi mieć przynajmniej 10 znaków.",
+            "lblTextValidation": "Treść maila musi mieć przynajmniej 20 znaków.",
+            "lblSend": "Wyślij"
+        }
+    },
+    "en":{
+        "lblContact": "Contact",
+        "lblOffer": "Offer",
+        "lblSliderHeader": "Trust professionals in the field of accounting.",
+        "lblSliderP1": "We provide a wide range of services to support small and medium-sized businesses, including accounting, tax, and advisory services.",
+        "lblSliderP2": "Get in touch with us and find out what we can do for your company!",
+        "section-about":{
+            "header": "Who are we?",
+            "p-1": "We are Savatax - your accounting team based in Warsaw. We are here to make your life easier and your business smoother. We work with small and medium-sized businesses from all kinds of industries and we get what you need and want financially. That’s why we have everything you need in terms of accounting services, such as bookkeeping, tax stuff, payroll, financial tips and audit.",
+            "p-2": "We are a team of passionate accountants who bring a wealth of experience and continuous learning to our work. We take advantage of technologies and information systems that guarantee security and efficiency of our service. We are flexible and tailor our solutions to your specific needs and expectations."
+        },
+        "section-1": {
+            "header": "Stress-free Accounting",
+            "paragraph-1": "We provide a wide range of services to support small and medium-sized businesses, including accounting, tax, and advisory services. Our team of qualified and experienced professionals is dedicated to providing individualized solutions for businesses in various industries.",
+            "paragraph-2": "Our goal is to help you achieve better results while providing you with peace of mind and security."
+        },
+        "section-2": {
+            "header": "Our services include:",
+            "cards": {
+                "card-1": "Bookkeeping and financial reporting",
+                "card-2": "Preparation of tax returns and settlements with tax authorities",
+                "card-3": "Tax advisory and optimization",
+                "card-4": "Financial analysis and budget planning",
+                "card-5": "Legal advice and contract management"
+            }
+        },
+        "section-3": {
+            "paragraph-1": "Our team consists of qualified and experienced specialists who possess the necessary certificates and authorizations.",
+            "paragraph-2": "We work in accordance with applicable regulations and professional standards, ensuring the confidentiality and security of our clients’ data.",
+            "paragraph-3": "Discover how we can help you unlock your business’s potential and make running it a breeze. Contact us today!",
+            "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
+        },
+        "section-contact": {
+            "header": "Contact Us",
+            "headerButton": "Direct Email"
+        },
+        "emailForm": {
+            "lblEmail": "Email Address",
+            "lblSubject": "Email Subject",
+            "lblText": "Email Content",
+            "phEmail": "email@example.com",
+            "phTextInput": "Start typing...",
+            "lblEmailValidation": "Email Address is required.",
+            "lblSubjectValidation": "Email subject must be at least 10 characters long.",
+            "lblTextValidation": "Email content must be at least 20 characters long.",
+            "lblSend": "Send"
+        }
+    }
+}
