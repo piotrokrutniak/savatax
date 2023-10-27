@@ -1,0 +1,292 @@
+{   
+    "pl":{
+        "lblContact": "Kontakt",
+        "lblOffer": "Oferta",
+        "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
+        "lblSliderP1": "W savatax świadczymy kompleksowe usługi księgowe, podatkowe i doradcze dla małych i średnich firm.",
+        "lblSliderP2": "Skontaktuj się z nami i dowiedz się, co możemy zrobić dla Twojej firmy!",
+        "section-about":{
+            "header": "O nas",
+            "p-1": "Jesteśmy Savatax - firmą rachunkową z Warszawy, która chce Ci pomóc w prowadzeniu Twojego biznesu. Zajmujemy się rachunkowością małych i średnich firm z różnych branż i wiemy, jak ważne jest dla Ciebie, aby mieć sprawy finansowe pod kontrolą. Dlatego oferujemy Ci pełen zakres usług rachunkowych, takich jak księgowość, rozliczenia podatkowe, kadry i płace, doradztwo finansowe i audyt.",
+            "p-2": "Nasz zespół to sami pasjonaci rachunkowości, którzy mają duże doświadczenie i stale się szkolą. Używamy nowoczesnych technologii i systemów informatycznych, które zapewniają bezpieczeństwo i szybkość obsługi. Jesteśmy elastyczni i dostosowujemy się do Twoich potrzeb i oczekiwań."
+        },
+        "section-1": {
+            "header": "Rachunkowość bez stresu",
+            "paragraph-1": "Jeśli szukasz profesjonalnej i rzetelnej firmy, która zajmie się Twoją rachunkowością, podatkami, finansami i prawem, to trafiłeś w dobre miejsce. Nasza firma doradcza oferuje kompleksowe i indywidualne rozwiązania dla małych i średnich przedsiębiorstw z różnych branż. ",
+            "paragraph-2": "Naszym celem jest zapewnienie Ci spokoju i bezpieczeństwa, a także pomóc Ci w osiąganiu lepszych wyników."
+        },
+        "section-2": {
+            "header": "Nasza oferta obejmuje między innymi:",
+            "cards": {
+                "card-1": "prowadzenie księgowości i sprawozdawczości finansowej",
+                "card-2": "sporządzanie deklaracji podatkowych i rozliczeń z urzędami skarbowymi",
+                "card-3": "doradztwo podatkowe i optymalizacja podatkowa",
+                "card-4": "analiza finansowa i planowanie budżetowe",
+                "card-5": "doradztwo prawne i obsługa umów"
+            }
+        },
+        "section-3": {
+            "paragraph-1": "Nasza firma składa się z wykwalifikowanych i doświadczonych specjalistów, którzy posiadają odpowiednie certyfikaty i uprawnienia. ",
+            "paragraph-2": "Pracujemy zgodnie z obowiązującymi przepisami i standardami zawodowymi, dbając o poufność i bezpieczeństwo danych naszych klientów.",
+            "paragraph-3": "Nie zwlekaj - skorzystaj z naszej oferty już dziś i zobacz, jak możemy ułatwić Ci prowadzenie Twojego biznesu.",
+            "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
+        },
+        "section-contact": {
+            "header": "Skontaktuj się z nami",
+            "headerButton": "Napisz bezpośrednio"
+        },
+        "emailForm": {
+            "lblEmail": "Adres Email",
+            "lblSubject": "Temat Maila",
+            "lblText": "Treść Maila",
+            "phEmail": "email@example.com",
+            "phTextInput": "Zacznij pisać...",
+            "lblEmailValidation": "Adres email wymagany.",
+            "lblSubjectValidation": "Tytuł maila musi mieć przynajmniej 10 znaków.",
+            "lblTextValidation": "Treść maila musi mieć przynajmniej 20 znaków.",
+            "lblSend": "Wyślij",
+            "lblRequired": "Wymagane pola"
+        },
+        "servicesPage": {
+            "slider":[
+                {
+                    "title": "Rachunkowość",
+                    "bullets": [
+                        "Prowadzenie ksiąg rachunkowych", 
+                        "Prowadzenie księgi przychodów i rozchodów", 
+                        "Prowadzenie ewidencji przychodów i rozliczenia podatków", 
+                        "Sporządzanie i konsolidacja sprawozdań finansowych"
+                    ]
+                },
+                {
+                    "title": "Kadry i płace",
+                    "bullets": [
+                        "Obsługa rachunków bankowych", 
+                        "Doradztwo podatkowe i prawne (VAT, CIT, WHT)", 
+                        "Elektroniczny obieg dokumentów", 
+                        "Zdalny dostęp do dokumentów, faktur i raportów"
+                    ]
+                },
+                {
+                    "title": "Doradztwo prawne",
+                    "bullets": [
+                        "Analiza finansowa", 
+                        "Planowanie budżetowe", 
+                        "Doradztwo prawne", 
+                        "Obsługa umów"
+                    ]
+                }
+            ],
+            "services":[
+                {
+                    "header": "Rachunkowość",
+                    "panels": [
+                        {
+                            "title": "Prowadzenie ksiąg rachunkowych",
+                            "text" : "Prowadzenie ksiąg rachunkowych to jedna z podstawowych usług oferowanych przez biura rachunkowe. W ramach tej usługi biuro rachunkowe Savatax zajmuje się prowadzeniem pełnej księgowości (księgi handlowe), prowadzeniem księgi przychodów i rozchodów (KPiR) oraz ewidencją przychodów ryczałtowych (EPR). Biuro rachunkowe Savatax zajmuje się również rozliczaniem podatku dochodowego od osób prawnych (CIT), podatku dochodowego od osób fizycznych (PIT), ryczałtu od przychodów ewidencjonowanych oraz kartą podatkową."
+                        },
+                        {
+                            "title": "Prowadzenie księgi przychodów i rozchodów",
+                            "text" : "Prowadzenie księgi przychodów i rozchodów to kolejna usługa oferowana przez biuro rachunkowe Savatax. Księga ta jest prowadzona przez przedsiębiorców, którzy nie przekraczają określonych limitów przychodu. Biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów i rozliczenia podatków oraz sporządzaniem deklaracji podatkowych."
+                        },
+                        {
+                            "title": "Prowadzenie ewidencji przychodów i rozliczenia podatków",
+                            "text" : "W ramach tej usługi biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów i rozliczenia podatków oraz sporządzaniem deklaracji podatkowych. Ewidencja przychodów to dokumentacja, która pozwala na śledzenie przychodów przedsiębiorstwa. Biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów oraz rozliczeniem podatkowym. W ramach tej usługi biuro rachunkowe Savatax zajmuje się również sporządzaniem deklaracji podatkowych. Dzięki usłudze prowadzenia ewidencji przychodów i rozliczenia podatków, przedsiębiorcy mogą mieć pewność, że ich dokumentacja jest prowadzona w sposób rzetelny i zgodny z obowiązującymi przepisami prawa."
+                        },
+                        {
+                            "title": "Sporządzanie i konsolidacja sprawozdań finansowych",
+                            "text" : "Sporządzanie i konsolidacja sprawozdań finansowych również jest usługą oferowaną przez biuro rachunkowe Savatax. Sprawozdania finansowe są dokumentami, które przedstawiają sytuację finansową przedsiębiorstwa w danym okresie. Biuro rachunkowe Savatax zajmuje się sporządzaniem sprawozdań finansowych dla swoich klientów oraz ich konsolidacją."
+                        }
+                    ]
+                },
+                {
+                    "header": "Kadry i płace",
+                    "panels": [
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        }
+                    ]
+                },
+                {
+                    "header": "Doradztwo prawne",
+                    "panels": [
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "en":{
+        "lblContact": "Contact",
+        "lblOffer": "Offer",
+        "lblSliderHeader": "Trust professionals in the field of accounting.",
+        "lblSliderP1": "At Savatax we provide a wide range of services to support small and medium-sized businesses, including accounting, tax, and advisory services.",
+        "lblSliderP2": "Get in touch with us and find out what we can do for your company!",
+        "section-about":{
+            "header": "Who are we?",
+            "p-1": "We are Savatax - your accounting team based in Warsaw. We are here to make your life easier and your business smoother. We work with small and medium-sized businesses from all kinds of industries and we get what you need and want financially. That’s why we have everything you need in terms of accounting services, such as bookkeeping, tax stuff, payroll, financial tips and audit.",
+            "p-2": "We are a team of passionate accountants who bring a wealth of experience and continuous learning to our work. We take advantage of technologies and information systems that guarantee security and efficiency of our service. We are flexible and tailor our solutions to your specific needs and expectations."
+        },
+        "section-1": {
+            "header": "Stress-free Accounting",
+            "paragraph-1": "We provide a wide range of services to support small and medium-sized businesses, including accounting, tax, and advisory services. Our team of qualified and experienced professionals is dedicated to providing individualized solutions for businesses in various industries.",
+            "paragraph-2": "Our goal is to help you achieve better results while providing you with peace of mind and security."
+        },
+        "section-2": {
+            "header": "Our services include:",
+            "cards": {
+                "card-1": "Bookkeeping and financial reporting",
+                "card-2": "Preparation of tax returns and settlements with tax authorities",
+                "card-3": "Tax advisory and optimization",
+                "card-4": "Financial analysis and budget planning",
+                "card-5": "Legal advice and contract management"
+            }
+        },
+        "section-3": {
+            "paragraph-1": "Our team consists of qualified and experienced specialists who possess the necessary certificates and authorizations.",
+            "paragraph-2": "We work in accordance with applicable regulations and professional standards, ensuring the confidentiality and security of our clients’ data.",
+            "paragraph-3": "Discover how we can help you unlock your business’s potential and make running it a breeze. Contact us today!",
+            "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
+        },
+        "section-contact": {
+            "header": "Contact Us",
+            "headerButton": "Direct Email"
+        },
+        "emailForm": {
+            "lblEmail": "Email Address",
+            "lblSubject": "Email Subject",
+            "lblText": "Email Content",
+            "phEmail": "email@example.com",
+            "phTextInput": "Start typing...",
+            "lblEmailValidation": "Email Address is required.",
+            "lblSubjectValidation": "Email subject must be at least 10 characters long.",
+            "lblTextValidation": "Email content must be at least 20 characters long.",
+            "lblSend": "Send",
+            "lblRequired": "Indicates required field"
+        },
+        "servicesPage": {
+            "slider":[
+                {
+                    "title": "Rachunkowość",
+                    "bullets": [
+                        "Prowadzenie ksiąg rachunkowych", 
+                        "Prowadzenie księgi przychodów i rozchodów", 
+                        "Prowadzenie ewidencji przychodów i rozliczenia podatków", 
+                        "Sporządzanie i konsolidacja sprawozdań finansowych"
+                    ]
+                },
+                {
+                    "title": "Kadry i płace",
+                    "bullets": [
+                        "Obsługa rachunków bankowych", 
+                        "Doradztwo podatkowe i prawne (VAT, CIT, WHT)", 
+                        "Elektroniczny obieg dokumentów", 
+                        "Zdalny dostęp do dokumentów, faktur i raportów"
+                    ]
+                },
+                {
+                    "title": "Doradztwo prawne",
+                    "bullets": [
+                        "Analiza finansowa", 
+                        "Planowanie budżetowe", 
+                        "Doradztwo prawne", 
+                        "Obsługa umów"
+                    ]
+                }
+            ],
+            "services":[
+                {
+                    "header": "Rachunkowość",
+                    "panels": [
+                        {
+                            "title": "Prowadzenie ksiąg rachunkowych",
+                            "text" : "Prowadzenie ksiąg rachunkowych to jedna z podstawowych usług oferowanych przez biura rachunkowe. W ramach tej usługi biuro rachunkowe Savatax zajmuje się prowadzeniem pełnej księgowości (księgi handlowe), prowadzeniem księgi przychodów i rozchodów (KPiR) oraz ewidencją przychodów ryczałtowych (EPR). Biuro rachunkowe Savatax zajmuje się również rozliczaniem podatku dochodowego od osób prawnych (CIT), podatku dochodowego od osób fizycznych (PIT), ryczałtu od przychodów ewidencjonowanych oraz kartą podatkową."
+                        },
+                        {
+                            "title": "Prowadzenie księgi przychodów i rozchodów",
+                            "text" : "Prowadzenie księgi przychodów i rozchodów to kolejna usługa oferowana przez biuro rachunkowe Savatax. Księga ta jest prowadzona przez przedsiębiorców, którzy nie przekraczają określonych limitów przychodu. Biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów i rozliczenia podatków oraz sporządzaniem deklaracji podatkowych."
+                        },
+                        {
+                            "title": "Prowadzenie ewidencji przychodów i rozliczenia podatków",
+                            "text" : "W ramach tej usługi biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów i rozliczenia podatków oraz sporządzaniem deklaracji podatkowych. Ewidencja przychodów to dokumentacja, która pozwala na śledzenie przychodów przedsiębiorstwa. Biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów oraz rozliczeniem podatkowym. W ramach tej usługi biuro rachunkowe Savatax zajmuje się również sporządzaniem deklaracji podatkowych. Dzięki usłudze prowadzenia ewidencji przychodów i rozliczenia podatków, przedsiębiorcy mogą mieć pewność, że ich dokumentacja jest prowadzona w sposób rzetelny i zgodny z obowiązującymi przepisami prawa."
+                        },
+                        {
+                            "title": "Sporządzanie i konsolidacja sprawozdań finansowych",
+                            "text" : "Sporządzanie i konsolidacja sprawozdań finansowych również jest usługą oferowaną przez biuro rachunkowe Savatax. Sprawozdania finansowe są dokumentami, które przedstawiają sytuację finansową przedsiębiorstwa w danym okresie. Biuro rachunkowe Savatax zajmuje się sporządzaniem sprawozdań finansowych dla swoich klientów oraz ich konsolidacją."
+                        }
+                    ]
+                },
+                {
+                    "header": "Kadry i płace",
+                    "panels": [
+                        {
+                            "title": "Obsługa rachunków bankowych",
+                            "text" : "Biuro rachunkowe Savatax z Warszawy oferuje swoim klientom szeroki zakres usług związanych z rachunkowością, podatkami, kadrami i płacami. W ramach działu obsługi rachunków bankowych biuro rachunkowe Savatax oferuje obsługę rachunków bankowych. W dziale doradztwa podatkowego i prawnego biuro rachunkowe Savatax oferuje doradztwo podatkowe i prawne (VAT, CIT, WHT). W dziale elektronicznego obiegu dokumentów biuro rachunkowe Savatax oferuje elektroniczny obieg dokumentów oraz zdalny dostęp do dokumentów, faktur i raportów."
+                        },
+                        {
+                            "title": "Doradztwo podatkowe i prawne (VAT, CIT, WHT)",
+                            "text" : "Obsługa rachunków bankowych to usługa, która pozwala na skuteczne zarządzanie finansami firmy. Biuro rachunkowe Savatax oferuje swoim klientom obsługę rachunków bankowych, dzięki czemu przedsiębiorcy mogą mieć pewność, że ich finanse są w dobrych rękach."
+                        },
+                        {
+                            "title": "Elektroniczny obieg dokumentów",
+                            "text" : "Doradztwo podatkowe i prawne (VAT, CIT, WHT) to kolejna usługa oferowana przez biuro rachunkowe Savatax. Biuro rachunkowe Savatax oferuje swoim klientom profesjonalne doradztwo podatkowe i prawne w zakresie VAT, CIT oraz WHT. Dzięki tej usłudze przedsiębiorcy mogą mieć pewność, że ich dokumentacja podatkowa jest prowadzona w sposób rzetelny i zgodny z obowiązującymi przepisami prawa."
+                        },
+                        {
+                            "title": "Zdalny dostęp do dokumentów, faktur i raportów",
+                            "text" : "Elektroniczny obieg dokumentów to usługa, która pozwala na szybkie i wygodne przesyłanie dokumentów między biurem rachunkowym a klientem. Biuro rachunkowe Savatax oferuje swoim klientom elektroniczny obieg dokumentów oraz zdalny dostęp do dokumentów, faktur i raportów. Dzięki tej usłudze przedsiębiorcy mogą mieć pewność, że ich dokumentacja jest prowadzona w sposób bezpieczny i zgodny z obowiązującymi przepisami prawa."
+                        }
+                    ]
+                },
+                {
+                    "header": "Doradztwo prawne",
+                    "panels": [
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        },
+                        {
+                            "title": "",
+                            "text" : ""
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
