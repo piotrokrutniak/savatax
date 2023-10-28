@@ -18,7 +18,7 @@ export function LandingPanel({countryCode = "pl"}:{countryCode: keyof typeof Loc
           <br/>
           {Localization[countryCode].lblSliderP2}
         </h2>
-        <a href={"#contact-section"}>
+        <a href={"#contact-section"} className="w-fit">
         <Button className="w-fit md:text-xl p-4 mt-2 shadow-md shadow-black/20 active:opacity-80
           hover:bg-gradient-to-br from-blue-500 via-blue-500 to-blue-400">
           {Localization[countryCode].lblContact}

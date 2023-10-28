@@ -1,18 +1,11 @@
-"use client"
-
 import Image from 'next/image'
 import SplashArt from '../../public/media/15.jpg'
 import { FaBalanceScale, FaBook,  FaChartPie, FaEnvelope, FaFileInvoiceDollar, FaPiggyBank } from 'react-icons/fa'
 import Localization from "@/app/localization.json"
 import { EmailForm } from './components/generic/emailForm'
 import { LandingPanel } from './components/landingPage/landingPanel'
-import { Cookies } from 'react-cookie'
-import { useState } from 'react'
 
-export default function Page() {
-  const cookies = new Cookies()
-  const [language, setLanguage] = useState<keyof typeof Localization>(cookies.get("preferred-lang") ?? "en")
-
+export default function HomePage({language = "en"}:{language: keyof typeof Localization}) {
   return (
     <div className="flex flex-col relative -top-20 gap-10 scroll-smooth">
       <section className="w-full h-screen-3/5 min-h-128 bg-gradient-to-t top-0 from-black to-black/90 relative text-white">
@@ -20,7 +13,7 @@ export default function Page() {
             <LandingPanel countryCode={language}/>
         </div>
         <div className="w-full h-screen-1/2 top-0 z-0">
-          <Image loading="lazy" layout="fill" objectFit="cover" src={SplashArt} alt="Album thumbnail" className="opacity-30 absolute w-full h-full"/>
+          <Image loading="eager" layout="fill" objectFit="cover" placeholder="blur" src={SplashArt} alt="Accounting documents splash art" className="opacity-30 absolute w-full h-full"/>
         </div>
       </section>
       <section id="summary-section" className='max-w-6xl p-4 sm:p-8 mx-auto w-full justify-center md:px-16 rounded-xl flex flex-col gap-5'>
@@ -29,7 +22,7 @@ export default function Page() {
           {Localization[language]['section-about']['p-1']}
         </p>
         <p className="md:leading-8 md:text-lg font-normal ">
-        {Localization[language]['section-about']['p-2']}
+          {Localization[language]['section-about']['p-2']}
         </p>
 
         <h1 className="md:text-3xl text-2xl font-bold text-blue-400 md:p-4 md:mt-8">{Localization[language]['section-1'].header}</h1>

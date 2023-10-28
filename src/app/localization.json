@@ -25,10 +25,10 @@
             "header": "Nasza oferta obejmuje między innymi:",
             "cards": {
                 "card-1": "prowadzenie księgowości i sprawozdawczości finansowej",
-                "card-2": "sporządzanie deklaracji podatkowych i rozliczeń z urzędami skarbowymi",
-                "card-3": "doradztwo podatkowe i optymalizacja podatkowa",
+                "card-2": "elektroniczne fakturowanie",
+                "card-3": "optymalizacja kosztów",
                 "card-4": "analiza finansowa i planowanie budżetowe",
-                "card-5": "doradztwo prawne i obsługa umów"
+                "card-5": "obsługa umów i kontraktów"
             }
         },
         "section-3": {
@@ -52,7 +52,8 @@
             "lblTextValidation": "Treść maila musi mieć przynajmniej 20 znaków.",
             "lblFormValidation": "Wypełnij wszystkie wymagane pola.",
             "lblSend": "Wyślij",
-            "lblRequired": "Wymagane pola"
+            "lblRequired": "Wymagane pola",
+            "lblSent": "Email wysłany"
         },
         "servicesPage": {
             "slider":[
@@ -66,20 +67,18 @@
                     ]
                 },
                 {
-                    "title": "Kadry i płace",
+                    "title": "Fakturowanie",
                     "bullets": [
                         "Obsługa rachunków bankowych", 
-                        "Doradztwo podatkowe i prawne (VAT, CIT, WHT)", 
                         "Elektroniczny obieg dokumentów", 
                         "Zdalny dostęp do dokumentów, faktur i raportów"
                     ]
                 },
                 {
-                    "title": "Doradztwo prawne",
+                    "title": "Doradztwo",
                     "bullets": [
                         "Analiza finansowa", 
                         "Planowanie budżetowe", 
-                        "Doradztwo prawne", 
                         "Obsługa umów"
                     ]
                 }
@@ -110,10 +109,6 @@
                     "header": "Fakturowanie",
                     "panels": [
                         {
-                            "title": "Doradztwo podatkowe i prawne (VAT, CIT, WHT)",
-                            "text" : "Obsługa rachunków bankowych to usługa, która pozwala na skuteczne zarządzanie finansami firmy. Biuro rachunkowe Savatax oferuje swoim klientom obsługę rachunków bankowych, dzięki czemu przedsiębiorcy mogą mieć pewność, że ich finanse są w dobrych rękach."
-                        },
-                        {
                             "title": "Elektroniczny obieg dokumentów",
                             "text" : "Elektroniczny obieg dokumentów to usługa, która pozwala na szybkie i wygodne przesyłanie dokumentów między biurem rachunkowym a klientem. Biuro rachunkowe Savatax oferuje swoim klientom elektroniczny obieg dokumentów oraz zdalny dostęp do dokumentów, faktur i raportów. Dzięki tej usłudze przedsiębiorcy mogą mieć pewność, że ich dokumentacja jest prowadzona w sposób bezpieczny i zgodny z obowiązującymi przepisami prawa."
                         },
@@ -124,7 +119,7 @@
                     ]
                 },
                 {
-                    "header": "Doradztwo prawne",
+                    "header": "Doradztwo",
                     "panels": [
                         {
                             "title": "Analiza finansowa",
@@ -133,10 +128,6 @@
                         {
                             "title": "Planowanie budżetowe",
                             "text" : "Planowanie budżetowe to kolejna usługa oferowana przez biuro rachunkowe Savatax. Biuro rachunkowe Savatax oferuje swoim klientom profesjonalne planowanie budżetowe, dzięki któremu przedsiębiorcy mogą mieć pewność, że ich finanse są w dobrych rękach."
-                        },
-                        {
-                            "title": "Doradztwo prawne",
-                            "text" : "Doradztwo prawne to usługa, która pozwala na skuteczne zarządzanie problemami prawno-biznesowymi. Biuro rachunkowe Savatax oferuje swoim klientom profesjonalne doradztwo prawne w zakresie VAT, CIT oraz WHT. Dzięki tej usłudze przedsiębiorcy mogą mieć pewność, że ich dokumentacja podatkowa jest prowadzona w sposób rzetelny i zgodny z obowiązującymi przepisami prawa."
                         },
                         {
                             "title": "Obsługa umów",
@@ -161,28 +152,29 @@
         },
         "section-about":{
             "header": "Who are we?",
-            "p-1": "We are Savatax - your accounting team based in Warsaw. We are here to make your life easier and your business smoother. We work with small and medium-sized businesses from all kinds of industries and we get what you need and want financially. That’s why we have everything you need in terms of accounting services, such as bookkeeping, tax stuff, payroll, financial tips and audit.",
-            "p-2": "We are a team of passionate accountants who bring a wealth of experience and continuous learning to our work. We take advantage of technologies and information systems that guarantee security and efficiency of our service. We are flexible and tailor our solutions to your specific needs and expectations."
+            "p-1": "If you're looking for an English-speaking accountant in Warsaw, then you've come to the right place. We are here to make your life easier and your business smoother. We work with small and medium-sized businesses from all kinds of industries and we get what you need and want financially. That's why we have everything you need in terms of accounting services, such as bookkeeping, accounting, financial tips and audit.",
+            "p-2": "We are a team of passionate accountants who bring a wealth of experience to our work. We take advantage of technologies and information systems that guarantee security and efficiency of our service. We are flexible and tailor our solutions to your specific needs and expectations."
         },
         "section-1": {
             "header": "Stress-free Accounting",
-            "paragraph-1": "We provide a wide range of services to support small and medium-sized businesses, including accounting, tax, and advisory services. Our team of qualified and experienced professionals is dedicated to providing individualized solutions for businesses in various industries.",
-            "paragraph-2": "Our goal is to help you achieve better results while providing you with peace of mind and security."
+            "paragraph-1": "We provide a wide range of services to support small and medium-sized businesses, including accounting, bookkeeping, and advisory services. Our team of qualified and experienced professionals is dedicated to providing individualized solutions for businesses in various industries.",
+            "paragraph-2": "We understand that finding an English-speaking accountant in Warsaw can be challenging, but we are here to make it easy for you. Our team of accountants is fluent in English and can provide you with the support you need to manage your finances effectively. We have extensive experience working with foreign-owned companies operating in Poland, so we understand the unique challenges that come with doing business in a foreign country.",
+            "paragraph-3": "Our goal is to help you achieve better results while providing you with peace of mind and security."
         },
         "section-2": {
             "header": "Our services include:",
             "cards": {
                 "card-1": "Bookkeeping and financial reporting",
-                "card-2": "Preparation of tax returns and settlements with tax authorities",
-                "card-3": "Tax advisory and optimization",
+                "card-2": "Electronic invoicing",
+                "card-3": "Cost optimization",
                 "card-4": "Financial analysis and budget planning",
-                "card-5": "Legal advice and contract management"
+                "card-5": "Contract handling"
             }
         },
         "section-3": {
             "paragraph-1": "Our team consists of qualified and experienced specialists who possess the necessary certificates and authorizations.",
-            "paragraph-2": "We work in accordance with applicable regulations and professional standards, ensuring the confidentiality and security of our clients’ data.",
-            "paragraph-3": "Discover how we can help you unlock your business’s potential and make running it a breeze. Contact us today!",
+            "paragraph-2": "We work in accordance with applicable regulations and professional standards, ensuring the confidentiality and security of our clients' data.",
+            "paragraph-3": "Discover how we can help you unlock your business's potential and make running it a breeze. Contact us today!",
             "paragraph-4": "Rachunkowość bez stresu - to nasza dewiza!"
         },
         "section-contact": {
@@ -200,12 +192,13 @@
             "lblTextValidation": "Email content must be at least 20 characters long.",
             "lblFormValidation": "Fill all required fields.",
             "lblSend": "Send",
-            "lblRequired": "Indicates required field"
+            "lblRequired": "Indicates required field",
+            "lblSent": "Email Sent"
         },
         "servicesPage": {
             "slider":[
                 {
-                    "title": "Bookkeeping and accounting",
+                    "title": "Accounting",
                     "bullets": [
                         "Bookkeeping", 
                         "Revenue and expense ledger upkeep (KPiR)", 
@@ -216,17 +209,15 @@
                 {
                     "title": "Invoicing",
                     "bullets": [
-                        "Tax and legal advice (VAT, CIT, WHT)", 
                         "Electronic invoicing", 
                         "Remote access to documents, invoices and reports"
                     ]
                 },
                 {
-                    "title": "Legal advice",
+                    "title": "Advisory",
                     "bullets": [
                         "Financial analysis", 
                         "Budget planning", 
-                        "Tax and legal advice (VAT, CIT, WHT)", 
                         "Contract handling"
                     ]
                 }
@@ -257,10 +248,6 @@
                     "header": "Invoicing",
                     "panels": [
                         {
-                            "title": "Tax and legal advice (VAT, CIT, WHT)",
-                            "text" : "Tax and legal advice is another service offered by Savatax accounting office. Savatax accounting office offers its clients professional tax and legal advice in the field of VAT, CIT, and WHT. Thanks to this service, entrepreneurs can be sure that their tax documentation is kept in a reliable and compliant manner with applicable law."
-                        },
-                        {
                             "title": "Electronic invoicing",
                             "text" : "Electronic invoicing and digitalization is a service that allows for quick and convenient transfer of documents between the accounting office and the client. Savatax accounting office offers its clients digitalization of documents and remote access to documents, invoices, and reports. Thanks to this service, entrepreneurs can be sure that their documentation is kept in a safe and compliant manner with applicable law."
                         },
@@ -271,7 +258,7 @@
                     ]
                 },
                 {
-                    "header": "Legal Advice",
+                    "header": "Advisory",
                     "panels": [
                         {
                             "title": "Financial analysis",
@@ -280,10 +267,6 @@
                         {
                             "title": "Budget planning",
                             "text" : "Budget planning is another service offered by Savatax accounting office. Savatax accounting office offers its clients professional budget planning, thanks to which entrepreneurs can be sure that their finances are in good hands."
-                        },
-                        {
-                            "title": "Tax and legal advice (VAT, CIT, WHT)",
-                            "text" : "Tax and legal advice is another service offered by Savatax accounting office. Savatax accounting office offers its clients professional tax and legal advice in the field of VAT, CIT, and WHT. Thanks to this service, entrepreneurs can be sure that their tax documentation is kept in a reliable and compliant manner with applicable law."
                         },
                         {
                             "title": "Contract handling",

@@ -73,7 +73,7 @@ export type ServiceSlide = {
 }
 
 export type CountryCode = {
-    code: "pl-PL" | "en-US"
+    code: "pl" | "en"
 }
 
 export interface Localization {

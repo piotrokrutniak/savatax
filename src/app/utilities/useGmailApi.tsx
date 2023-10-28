@@ -45,6 +45,7 @@ import { CSSProperties } from "react";
 //       },
 // });
 
+//TODO Update Credentials
 const transport = nodemailer.createTransport({
     host: "smtp-relay.sendinblue.com",
     port: 587, 
@@ -85,35 +86,22 @@ export async function SendConfirmation(email: Email){
 const ConfirmationBody = (email: Email) => {
     return(`
         <div style="padding: 1rem;">
-            <h1 style="font-weight: 700; font-size: 1.25rem;">Hi ${email.from},</h1>
-            <p style="margin-top: 0.75rem;">We've just received your email inquiry, we'll get in touch with you as soon as possible.</p>
-            <div style="margin-top: 0.75rem;">
+            <h2 style="font-weight:700; font-size:1.1rem; margin: 0px;">Hi <span style="text-decoration: none;">${email.from}</span>,</h2>
+            <br/>
+            <p style="margin-top:0.75rem; margin: 0px; font-size: 1rem;">We've just received your email inquiry, we'll get in touch with you as soon as possible.</p>
+            <p style="margin-top:0.75rem; margin: 0px; font-size: 1rem;">If you were not trying to get in touch with us, please disregard this email.</p>
+            <br/>
+            <div style="margin-top: 0.75rem; font-weight: 600; font-size: 1rem;">
                 Best regards,
                 <br/>
                 Savatax Team.
             </div>
-            <div style="margin-top: 0.5rem; font-size: 1.5rem; font-weight: 700; color: transparent; color: #60A5FA;">
+            <div style="font-size: 1.5rem; font-weight: 700; color: transparent; color: #60A5FA;">
                 Savatax
             </div>
         </div>`
     )
 }
-
-// export default function Confirmation(email: Email){
-//     return(
-//         <div style={WrapperStyle}>
-//         <h1 style={HeaderStyle}>Hi piotrokrutniak@gmail.com,</h1>
-//             <p>We've just received your email inquiry, we'll get in touch with you as soon as possible.</p>
-//         <div>
-//             <p>Best regards,</p>
-//             <p>Savatax Team.</p>
-//         </div>
-//         <div style={LogoStyle}>
-//             <h1>Savatax</h1>
-//         </div>
-//         </div>
-//     )
-// }
 
 const WrapperStyle: CSSProperties = {
 "padding": "2rem;",

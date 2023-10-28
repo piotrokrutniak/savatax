@@ -7,24 +7,39 @@ import Link from "next/link";
 import localization from "@/app/localization.json";
 import { useScrollPosition } from "@/app/utilities/useScrollPosition";
 import { Cookies } from "react-cookie";
+import { getURL } from "next/dist/shared/lib/utils";
 
 export default function NavBar(){
     const [showMobile, setShowMobile] = useState(false);
-    const languages = [{code: "pl", label: "Polski"}, {code: "en", label: "English"}];
+    const languages = [{code: "en", label: "English"}, {code: "pl", label: "Polski"}];
     const cookies = new Cookies();
-    const [language, setLanguage] = useState<keyof typeof localization>(cookies.get("preferred-lang") || "en");
+    const [language, setLanguage] = useState<keyof typeof localization>("en");
     const scrollY = useScrollPosition();
+
+    useEffect(() => {
+        ParseLanguage()
+    }, [])
     
     function SetLanguage(value: keyof typeof localization){
         cookies.set("preferred-lang", value, {sameSite: true});
         setLanguage(value);
     }
 
+    function ParseLanguage(){
+        const lang = getURL().slice(1, 3)
+
+        if (lang == "pl" || lang == "en"){
+            return setLanguage(lang)
+        }
+
+        return setLanguage("en")
+    }
+
     return(
         <nav className={`${scrollY > 0 ? "bg-white" : "bg-transparent text-white" } sticky top-0 z-20 transition-all`}>
             <div className="w-full flex">
                 <div className="p-2 m-auto w-full flex max-w-7xl justify-between items-center">
-                    <Link href="/">
+                    <Link href={`/${language}`}>
                     <div className="flex gap-1 h-fit select-none cursor-pointer active:opacity-80 active:pb-0 
                             border-opacity-0 transition-all group">
                         <FaCoins className={`${scrollY > 0 ? "fill-blue-400 transition-all" : "fill-white"} h-full w-6 mt-1  group-hover:fill-blue-300 transition-opacity`}/>
@@ -33,16 +48,16 @@ export default function NavBar(){
                     </Link>
                     <div className="flex place-items-center gap-2 md:gap-4">
                     <div className="hidden text-lg gap-4 md:flex">
-                        <a href={"/#contact-section"}>
+                        <a href={`/${language}/#contact-section`}>
                             <Button className="bg-transparent active:bg-sky-100/20 hover:bg-sky-100/30 active:opacity-50" onClick={undefined}>
                                 {localization[language].lblContact}
                             </Button>
                         </a>
-                        <Link href={"/oferta"}>
+                        <Link href={`/${language}/services`}>
                             <Button className="bg-transparent active:bg-sky-100/20 hover:bg-sky-100/30 active:opacity-50" onClick={undefined}>
                                 {localization[language].lblOffer}
                             </Button>
-                        </Link>
+                        </Link> 
                     </div>
                     <DropDown languages={languages} language={language} setLanguage={SetLanguage} scrollY={scrollY}/>
                     <div className="md:hidden flex">
@@ -53,12 +68,12 @@ export default function NavBar(){
                         <BsX className="fill-white w-16 h-16 cursor-pointer hover:blue-vermilion-400" onClick={() => setShowMobile(false)}/>
                     </div>
                     <div id="mobile-body" className="p-8 flex flex-col gap-3 font-semibold">
-                        <a href={"/#contact-section"}>
+                        <a href={`/${language}/#contact-section`}>
                             <Button className="text-white py-4 justify-center w-full bg-slate-500/40 active:bg-slate-500/30"  onClick={() => setShowMobile(false)}>
                                 {localization[language].lblContact}
                             </Button>
                         </a>
-                        <Link href={"/oferta"}>
+                        <Link href={`/${language}/services`}>
                             <Button className="text-white py-4 justify-center w-full bg-slate-500/40 active:bg-slate-500/30"  onClick={() => setShowMobile(false)}>
                                 {localization[language].lblOffer}
                             </Button>
@@ -112,9 +127,14 @@ function DropdownOption({value, setLanguage, setOpened}:{
         setLanguage(value)
         setOpened(false)
     }
+
+    function Redirect(){
+        getURL().slice(1, 3)
+    }
+
     return(
-        <a href={"/"}>
+        <Link href={"/" + value}>
             <div className="p-2 hover:bg-slate-400/20 cursor-pointer" onClick={() => HandleClick()}>{value}</div>
-        </a>
+        </Link>
     )
 }

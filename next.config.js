@@ -4,6 +4,10 @@ const nextConfig = {
         domains: [
             "via.placeholder.com"
         ]
+    },
+    i18n:{
+        locales: ['en', 'pl'],
+        defaultLocale: 'en',
     }
 }
 

@@ -9,12 +9,12 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Savatax',
-  description: 'Rachunkowość bez stresu!',
+  description: 'Bookkeeping and accounting services in Warsaw.',
 }
 
 export default function RootLayout({children}:{children: React.ReactNode}) {
   return (
-    <html lang="pl" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth">
       <body className={`${inter.className} `}>
         <main className="min-h-screen min-w-mobile flex flex-col pb-4 overflow-x-clip">
         <NavBar/>
