@@ -78,7 +78,7 @@ export default function NavBar(){
                                 {localization[language].lblOffer}
                             </Button>
                         </Link>
-                        <Link href={"/"}>
+                        <Link href={`/${language}`}>
                             <Button className="text-white py-4 justify-center w-full"  onClick={() => setShowMobile(false)}>
                                 {localization[language].lblHome}
                             </Button>

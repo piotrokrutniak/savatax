@@ -85,7 +85,7 @@ export default function HomePage({language = "en"}:{language: keyof typeof Local
 
 function ListPanel({children}:{children: React.ReactNode}){
   return(
-    <div className="shadow-md shadow-black/20 rounded-lg p-8 flex justify-between gap-4 bg-white md:leading-8">
+    <div className="shadow-md shadow-black/20 rounded-lg p-8 flex justify-start gap-4 bg-white md:leading-8">
       {children}
     </div>
   )

@@ -25,8 +25,8 @@
             "header": "Nasza oferta obejmuje między innymi:",
             "cards": {
                 "card-1": "prowadzenie księgowości i sprawozdawczości finansowej",
-                "card-2": "elektroniczne fakturowanie",
-                "card-3": "optymalizacja kosztów",
+                "card-2": "elektroniczne fakturowanie i digitalizacja",
+                "card-3": "optymalizacja i śledzenie kosztów",
                 "card-4": "analiza finansowa i planowanie budżetowe",
                 "card-5": "obsługa umów i kontraktów"
             }
@@ -165,8 +165,8 @@
             "header": "Our services include:",
             "cards": {
                 "card-1": "Bookkeeping and financial reporting",
-                "card-2": "Electronic invoicing",
-                "card-3": "Cost optimization",
+                "card-2": "Electronic invoicing and digitalization",
+                "card-3": "Cost optimization and tracking",
                 "card-4": "Financial analysis and budget planning",
                 "card-5": "Contract handling"
             }
