@@ -9,7 +9,7 @@
         "cookiesPopUp": {
             "header": "Nasza strona używa ciasteczek",
             "text": "Wykorzystujemy ciasteczka aby zapewnić najlepsze doświadczenie użytkownika. Używając naszej strony zgadzasz się na nasze korzystanie z ciasteczek.",
-            "confirmation": "Rozumiem"
+            "confirmation": ""
         },
         "section-about":{
             "header": "O nas",

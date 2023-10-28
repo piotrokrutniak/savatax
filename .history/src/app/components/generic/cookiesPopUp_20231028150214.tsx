@@ -11,6 +11,7 @@ export function CookiesPopUp(){
 
     useEffect(() => {
         setAccepted(cookies.get("accept-cookies") || false);
+
     }, [])
     
     function AcceptCookies(){

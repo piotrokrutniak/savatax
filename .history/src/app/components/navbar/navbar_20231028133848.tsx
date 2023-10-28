@@ -7,6 +7,7 @@ import Link from "next/link";
 import localization from "@/app/localization.json";
 import { useScrollPosition } from "@/app/utilities/useScrollPosition";
 import { Cookies } from "react-cookie";
+import Router from "next/router";
 
 export default function NavBar(){
     const [showMobile, setShowMobile] = useState(false);
@@ -18,6 +19,7 @@ export default function NavBar(){
     function SetLanguage(value: keyof typeof localization){
         cookies.set("preferred-lang", value, {sameSite: true});
         setLanguage(value);
+        Router.reload()
     }
 
     return(
@@ -88,7 +90,6 @@ function DropDown({languages, language, setLanguage, scrollY}:{
 
     return(
         <div className="relative">
-
             <div className={`${opened ? "bg-blue-500 hover:bg-gradient-to-br from-blue-500 via-blue-500 to-blue-400" : (scrollY > 0 ? "bg-black hover:shadow-lg" : "bg-black/30 hover:bg-black/40")}  w-20 p-3 md:p-3 rounded-lg text-white flex place-items-center gap-2 cursor-pointer justify-between max-md:text-sm transition-all`}
                 onClick={() => setOpened(x => !x)}>
                 <div>
@@ -111,10 +112,11 @@ function DropdownOption({value, setLanguage, setOpened}:{
     function HandleClick(){
         setLanguage(value)
         setOpened(false)
+        Router.reload()
     }
     return(
-        <a href={"/"}>
+        //<Link href={"/" + value}>
             <div className="p-2 hover:bg-slate-400/20 cursor-pointer" onClick={() => HandleClick()}>{value}</div>
-        </a>
+        //</Link>
     )
 }

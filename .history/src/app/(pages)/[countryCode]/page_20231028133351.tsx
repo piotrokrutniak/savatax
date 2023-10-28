@@ -9,10 +9,9 @@ import { Cookies } from 'react-cookie'
 import { useState } from 'react'
 
 export default function Home(pageData: {params: {countryCode: keyof typeof Localization}, searchParams: any}) {
-  const [language, setLanguage] = useState<keyof typeof Localization>(["en", "pl"].includes(pageData.params.countryCode) ? pageData.params.countryCode : "en")
-  //const cookies = new Cookies()
-  //const [language, setLanguage] = useState<keyof typeof Localization>(cookies.get("preferred-lang") ?? "en")
-
+  //const language = ["en", "pl"].includes(pageData.params.countryCode) ? pageData.params.countryCode : "en"
+  const cookies = new Cookies()
+  const [language, setLanguage] = useState<keyof typeof Localization>(cookies.get("preferred-lang") ?? "en")
   return (
     <div className="flex flex-col relative -top-20 gap-10 scroll-smooth">
       <section className="w-full h-screen-3/5 min-h-128 bg-gradient-to-t top-0 from-black to-black/90 relative text-white">

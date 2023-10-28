@@ -1,17 +1,12 @@
-"use client"
 import Image from 'next/image'
 import SplashArt from '../../../../public/media/15.jpg'
 import { FaBalanceScale, FaBook,  FaChartPie, FaEnvelope, FaFileInvoiceDollar, FaPiggyBank } from 'react-icons/fa'
 import Localization from "@/app/localization.json"
 import { EmailForm } from '../../components/generic/emailForm'
 import { LandingPanel } from '@/app/components/landingPage/landingPanel'
-import { Cookies } from 'react-cookie'
-import { useState } from 'react'
 
 export default function Home(pageData: {params: {countryCode: keyof typeof Localization}, searchParams: any}) {
-  const [language, setLanguage] = useState<keyof typeof Localization>(["en", "pl"].includes(pageData.params.countryCode) ? pageData.params.countryCode : "en")
-  //const cookies = new Cookies()
-  //const [language, setLanguage] = useState<keyof typeof Localization>(cookies.get("preferred-lang") ?? "en")
+  const language = ["en", "pl"].includes(pageData.params.countryCode) ? pageData.params.countryCode : "pl"
 
   return (
     <div className="flex flex-col relative -top-20 gap-10 scroll-smooth">
