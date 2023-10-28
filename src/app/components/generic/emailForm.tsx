@@ -7,6 +7,7 @@ import { FaCheckCircle, FaExclamation, FaExclamationCircle, FaPaperPlane } from 
 import PostEmail from "@/app/integration/gmail/postEmail";
 import translations from "@/app/localization.json"
 import { Localization } from "@/app/types";
+import { env } from "process";
 
 
 
@@ -22,8 +23,7 @@ export function EmailForm({language = "pl"}:{language?: string}){
 
     const [email, setEmail] = useState({
         from: "",
-        //to: "karol.zach@savatax.com",
-        to: "bdtrppn@gmail.com",
+        to: process.env.SMTP_FORM_INBOX,
         subject: "",
         text: ""
     })
@@ -75,7 +75,7 @@ export function EmailForm({language = "pl"}:{language?: string}){
 
     return(
         <div className={`${mounted ? "opacity-100" : "opacity-0 translate-y-1/2"}  flex flex-col gap-4 transition-all relative duration-200`}>
-            <FormInput placeholder={localization[language].emailForm.phEmail} value={email.from} onChange={UpdateEmail} label={localization[language].emailForm.lblEmail} 
+            <FormInput autoComplete={true} type="email" name="email" placeholder={localization[language].emailForm.phEmail} value={email.from} onChange={UpdateEmail} label={localization[language].emailForm.lblEmail} 
                 validationResult={validation.from} onBlur={() => ValidateForm()}
                 required={true}/>
             <FormInput placeholder={localization[language].emailForm.phTextInput} value={email.subject} onChange={UpdateTitle} label={localization[language].emailForm.lblSubject} 

@@ -1,12 +1,14 @@
-export default function FormInput({className, label, type, required = false, defaultValue, value, minValue, placeholder, onChange, onBlur, onFocus, inputClassName, messageClassName, validationResult, validationMessage}:{
+export default function FormInput({className, label, type, required = false, autoComplete = false, defaultValue, value, minValue, placeholder, name, onChange, onBlur, onFocus, inputClassName, messageClassName, validationResult, validationMessage}:{
     className?: string;
     label?: string;
     type?: string;
     required?: boolean;
+    autoComplete?: boolean;
     defaultValue?: string;
     value?: string;
     minValue?: string | number;
     placeholder?: string;
+    name?: string;
     onChange?: (value: any) => void;
     onBlur?: () => void;
     onFocus?: () => void;
@@ -30,7 +32,11 @@ export default function FormInput({className, label, type, required = false, def
             <div className={`${label ? "" : "hidden"} p-2 flex`} >
                 {label || ""} <div className={`${required ? "block" : " hidden"} text-red-500 font-semibold ml-1`}>*</div>
             </div>
-            <input type={type || "text"} defaultValue={defaultValue || ""} placeholder={placeholder ?? ""}
+            <input autoComplete={autoComplete ? "on" : "off"}
+                name={name ?? ""}
+                type={type || "text"} 
+                defaultValue={defaultValue || ""} 
+                placeholder={placeholder ?? ""}
                 min={minValue}
                 value={value}
                 onChange={(e) => handleChange(e.target.value)} 

@@ -1,63 +1,20 @@
 import nodemailer from "nodemailer"
 import { Email } from "../types";
-import secret from "@/app/client_secret.json"
 import config from "@/app/config.json"
 import { CSSProperties } from "react";
-
-// Temp key
-
-// const transport = nodemailer.createTransport({
-//     host: "smtp.gmail.com",
-//     port: 587,
-//     secure: false, // upgrade later with STARTTLS
-//     auth: {
-//         type: "OAuth2",
-//         user: "piotrokrutniak@gmail.com",
-//         clientId: secret.web.client_id,
-//         clientSecret: secret.web.client_secret,
-//         refreshToken: "1//04VftevghRdzACgYIARAAGAQSNwF-L9IrrnlTzvFxRd437oa1RpC6oJOAg_Ufmq7f9UyA1tQ9vxwwvDiOJ7dATCAY-1-S70WgmNU",
-//         accessToken: "ya29.a0AfB_byA1WeRRklNyV4l6eJMb0fZncW06bcUyku96YfYiQDtzeWTIYauSCbMf2aOB9HFQFvOnJy6UDMiJGs4RP1u8dydeM3lsVYOcfZmhpzh2Uhw7hdJteQOxm5exMzdTU2rwGxDRUE94FsluG6KgR9LNJgYW7uOurD5qaCgYKAZ4SARMSFQGOcNnCA1qzP3K3NjCA0pMQgPMS7A0171",
-//         expires: 0,
-//       },
-// });
-
-// transport.set("oauth2_provision_cb", (user, renew, callback) => {
-//     let accessToken = "ya29.a0AfB_byA1WeRRklNyV4l6eJMb0fZncW06bcUyku96YfYiQDtzeWTIYauSCbMf2aOB9HFQFvOnJy6UDMiJGs4RP1u8dydeM3lsVYOcfZmhpzh2Uhw7hdJteQOxm5exMzdTU2rwGxDRUE94FsluG6KgR9LNJgYW7uOurD5qaCgYKAZ4SARMSFQGOcNnCA1qzP3K3NjCA0pMQgPMS7A0171",
-//     if (!accessToken) {
-//       return callback(new Error("Unknown user"));
-//     } else {
-//       return callback(null, accessToken);
-//     }
-//   });
-
-// const transport = nodemailer.createTransport({
-//     host: "smtp.gmail.com",
-//     port: 587,
-//     secure: false, // upgrade later with STARTTLS
-//     auth: {
-//         type: "OAuth2",
-//         user: "piotrokrutniak@gmail.com",
-//         clientId: secret.web.client_id,
-//         clientSecret: secret.web.client_secret,
-//         refreshToken: "1//04VftevghRdzACgYIARAAGAQSNwF-L9IrrnlTzvFxRd437oa1RpC6oJOAg_Ufmq7f9UyA1tQ9vxwwvDiOJ7dATCAY-1-S70WgmNU",
-//         accessToken: "ya29.a0AfB_byA1WeRRklNyV4l6eJMb0fZncW06bcUyku96YfYiQDtzeWTIYauSCbMf2aOB9HFQFvOnJy6UDMiJGs4RP1u8dydeM3lsVYOcfZmhpzh2Uhw7hdJteQOxm5exMzdTU2rwGxDRUE94FsluG6KgR9LNJgYW7uOurD5qaCgYKAZ4SARMSFQGOcNnCA1qzP3K3NjCA0pMQgPMS7A0171",
-//         expires: 0,
-//       },
-// });
+import { env } from "process";
 
 //TODO Update Credentials
 const transport = nodemailer.createTransport({
-    host: "smtp-relay.sendinblue.com",
+    host: process.env.SMTP_HOST ?? "missing .env",
     port: 587, 
     secure: false, // upgrade later with STARTTLS
     auth: {
         type: "login",
-        user: "piotrokrutniak@gmail.com",
-        pass: "tEp3UBV89WgmH16d"
+        user: process.env.SMTP_USER ?? "missing .env",
+        pass: process.env.SMTP_PASSWORD ?? "missing .env"
       },
 });
-
-
 
 export async function SendEmail(email: Email){
     console.log("Sending email to: " + email.to)
@@ -76,7 +33,7 @@ export async function SendEmail(email: Email){
 export async function SendConfirmation(email: Email){
     console.log("Sent confirmation to: " + email.from)
     return await transport.sendMail({
-        from: "kontakt@savatax.com",
+        from: process.env.SMTP_CONTACT ?? "missing .env",
         to: email.from,
         subject: "Contact Form Confirmation",
         html: ConfirmationBody(email),
@@ -86,10 +43,12 @@ export async function SendConfirmation(email: Email){
 const ConfirmationBody = (email: Email) => {
     return(`
         <div style="padding: 1rem;">
-            <h2 style="font-weight:700; font-size:1.1rem; margin: 0px;">Hi <span style="text-decoration: none;">${email.from}</span>,</h2>
+            <h2 style="font-weight: 700; font-size: 1.1rem; margin: 0px;">Hi <span style="text-decoration: none;">${email.from}</span>,</h2>
             <br/>
-            <p style="margin-top:0.75rem; margin: 0px; font-size: 1rem;">We've just received your email inquiry, we'll get in touch with you as soon as possible.</p>
-            <p style="margin-top:0.75rem; margin: 0px; font-size: 1rem;">If you were not trying to get in touch with us, please disregard this email.</p>
+            <p style="margin-top: 0.75rem; margin: 0px; font-size: 1rem;">We've just received your email inquiry, we'll get in touch with you as soon as possible.</p>
+            <p style="margin-top: 0.75rem; margin: 0px; font-size: 1rem;">If you were not trying to get in touch with us, please disregard this email.</p>
+            <br/>
+            <p style="margin-top: 0.75rem; margin: 0px; font-size: 1rem; opacity: 0.6;">This is an automatic reply, please do not reply.</p>
             <br/>
             <div style="margin-top: 0.75rem; font-weight: 600; font-size: 1rem;">
                 Best regards,
