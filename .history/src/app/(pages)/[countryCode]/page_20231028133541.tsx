@@ -6,14 +6,12 @@ import Localization from "@/app/localization.json"
 import { EmailForm } from '../../components/generic/emailForm'
 import { LandingPanel } from '@/app/components/landingPage/landingPanel'
 import { Cookies } from 'react-cookie'
-import { useEffect, useState } from 'react'
+import { useState } from 'react'
 
 export default function Home(pageData: {params: {countryCode: keyof typeof Localization}, searchParams: any}) {
-  const [language, setLanguage] = useState<keyof typeof Localization>("en")
-
-  useEffect(() => {
-    setLanguage(["en", "pl"].includes(pageData.params.countryCode) ? pageData.params.countryCode : "en")
-  }, [])
+  const [language, setLanguage] = useState<keyof typeof Localization>(["en", "pl"].includes(pageData.params.countryCode) ? pageData.params.countryCode : "en")
+  //const cookies = new Cookies()
+  //const [language, setLanguage] = useState<keyof typeof Localization>(cookies.get("preferred-lang") ?? "en")
 
   return (
     <div className="flex flex-col relative -top-20 gap-10 scroll-smooth">
