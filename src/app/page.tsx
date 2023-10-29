@@ -17,7 +17,7 @@ export default function HomePage({language = "en"}:{language: keyof typeof Local
         </div>
       </section>
       <section id="summary-section" className='max-w-6xl p-4 sm:p-8 mx-auto w-full justify-center md:px-16 rounded-xl flex flex-col gap-5'>
-      <h1 className="md:text-3xl text-2xl font-bold text-blue-400 md:p-4">{Localization[language]['section-about'].header}</h1>
+        <h2 className="md:text-3xl text-2xl font-bold text-blue-400 md:p-4">{Localization[language]['section-about'].header}</h2>
         <p className="md:leading-8 md:text-lg font-normal ">
           {Localization[language]['section-about']['p-1']}
         </p>
@@ -25,7 +25,7 @@ export default function HomePage({language = "en"}:{language: keyof typeof Local
           {Localization[language]['section-about']['p-2']}
         </p>
 
-        <h1 className="md:text-3xl text-2xl font-bold text-blue-400 md:p-4 md:mt-8">{Localization[language]['section-1'].header}</h1>
+        <h2 className="md:text-3xl text-2xl font-bold text-blue-400 md:p-4 md:mt-8">{Localization[language]['section-1'].header}</h2>
         <p className="md:leading-8 md:text-lg font-normal ">
           {Localization[language]['section-1']['paragraph-1']}
         </p>
@@ -70,11 +70,11 @@ export default function HomePage({language = "en"}:{language: keyof typeof Local
       </section>
       <section id="contact-section" className='max-w-6xl p-4 sm:p-8 mx-auto w-full justify-center md:px-16 rounded-xl flex flex-col gap-5'>
         <div className="flex flex-col sm:flex-row sm:justify-between sm:place-items-center">
-          <h1 className="md:text-3xl text-2xl font-bold text-blue-400 md:p-4"> {Localization[language]['section-contact']['header']}</h1>
+          <h2 className="md:text-3xl text-2xl font-bold text-blue-400 md:p-4"> {Localization[language]['section-contact']['header']}</h2>
           <a href={"mailto:karol.zach@savatax.com"} className="w-fit">
-            <h2 className="md:text-xl max-sm:pt-1 text-lg text active:opacity-80 border-b-2 pb-0 border-black hover:border-blue-400 font-semibold hover:text-blue-400 cursor-pointer transition-all w-fit flex">
+            <h3 className="md:text-xl max-sm:pt-1 text-lg text active:opacity-80 border-b-2 pb-0 border-black hover:border-blue-400 font-semibold hover:text-blue-400 cursor-pointer transition-all w-fit flex">
               {Localization[language]['section-contact']['headerButton']} <FaEnvelope className="ml-2 mt-1"/> 
-            </h2>
+            </h3>
           </a>
         </div>
         <EmailForm language={language}/>
@@ -85,9 +85,9 @@ export default function HomePage({language = "en"}:{language: keyof typeof Local
 
 function ListPanel({children}:{children: React.ReactNode}){
   return(
-    <div className="shadow-md shadow-black/20 rounded-lg p-8 flex justify-start gap-4 bg-white md:leading-8">
+    <li className="shadow-md shadow-black/20 rounded-lg p-8 flex justify-start gap-4 bg-white md:leading-8">
       {children}
-    </div>
+    </li>
   )
 }
 

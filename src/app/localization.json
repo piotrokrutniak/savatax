@@ -4,7 +4,7 @@
         "lblOffer": "Oferta",
         "lblHome": "Strona Domowa",
         "lblSliderHeader": "Zaufaj profesjonalistom w dziedzinie rachunkowości",
-        "lblSliderP1": "W savatax świadczymy kompleksowe usługi księgowe, podatkowe i doradcze dla małych i średnich firm.",
+        "lblSliderP1": "W savatax świadczymy kompleksowe usługi księgowe i doradcze dla małych i średnich firm.",
         "lblSliderP2": "Skontaktuj się z nami i dowiedz się, co możemy zrobić dla Twojej firmy!",
         "cookiesPopUp": {
             "header": "Nasza strona używa ciasteczek",
@@ -13,7 +13,7 @@
         },
         "section-about":{
             "header": "O nas",
-            "p-1": "Jesteśmy Savatax - firmą rachunkową z Warszawy, która chce Ci pomóc w prowadzeniu Twojego biznesu. Zajmujemy się rachunkowością małych i średnich firm z różnych branż i wiemy, jak ważne jest dla Ciebie, aby mieć sprawy finansowe pod kontrolą. Dlatego oferujemy Ci pełen zakres usług rachunkowych, takich jak księgowość, rozliczenia podatkowe, kadry i płace, doradztwo finansowe i audyt.",
+            "p-1": "Jesteśmy Savatax - firmą rachunkową z Warszawy, która chce Ci pomóc w prowadzeniu Twojego biznesu. Zajmujemy się rachunkowością małych i średnich firm z różnych branż i wiemy, jak ważne jest dla Ciebie, aby mieć sprawy finansowe pod kontrolą. Dlatego oferujemy Ci pełen zakres usług rachunkowych, takich jak księgowość, doradztwo finansowe czy audyt.",
             "p-2": "Nasz zespół to sami pasjonaci rachunkowości, którzy mają duże doświadczenie i stale się szkolą. Używamy nowoczesnych technologii i systemów informatycznych, które zapewniają bezpieczeństwo i szybkość obsługi. Jesteśmy elastyczni i dostosowujemy się do Twoich potrzeb i oczekiwań."
         },
         "section-1": {
@@ -62,7 +62,7 @@
                     "bullets": [
                         "Prowadzenie ksiąg rachunkowych", 
                         "Prowadzenie księgi przychodów i rozchodów", 
-                        "Prowadzenie ewidencji przychodów i rozliczenia podatków", 
+                        "Prowadzenie ewidencji przychodów", 
                         "Sporządzanie i konsolidacja sprawozdań finansowych"
                     ]
                 },
@@ -93,11 +93,11 @@
                         },
                         {
                             "title": "Prowadzenie księgi przychodów i rozchodów",
-                            "text" : "Prowadzenie księgi przychodów i rozchodów to kolejna usługa oferowana przez biuro rachunkowe Savatax. Księga ta jest prowadzona przez przedsiębiorców, którzy nie przekraczają określonych limitów przychodu. Biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów i rozliczenia podatków oraz sporządzaniem deklaracji podatkowych."
+                            "text" : "Prowadzenie księgi przychodów i rozchodów to kolejna usługa oferowana przez biuro rachunkowe Savatax. Księga ta jest prowadzona przez przedsiębiorców, którzy nie przekraczają określonych limitów przychodu."
                         },
                         {
-                            "title": "Prowadzenie ewidencji przychodów i rozliczenia podatków",
-                            "text" : "W ramach tej usługi biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów i rozliczenia podatków oraz sporządzaniem deklaracji podatkowych. Ewidencja przychodów to dokumentacja, która pozwala na śledzenie przychodów przedsiębiorstwa. Biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów oraz rozliczeniem podatkowym. W ramach tej usługi biuro rachunkowe Savatax zajmuje się również sporządzaniem deklaracji podatkowych. Dzięki usłudze prowadzenia ewidencji przychodów i rozliczenia podatków, przedsiębiorcy mogą mieć pewność, że ich dokumentacja jest prowadzona w sposób rzetelny i zgodny z obowiązującymi przepisami prawa."
+                            "title": "Prowadzenie ewidencji przychodów",
+                            "text" : "W ramach tej usługi biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów. Ewidencja przychodów to dokumentacja, która pozwala na śledzenie przychodów przedsiębiorstwa. Biuro rachunkowe Savatax zajmuje się prowadzeniem ewidencji przychodów. Dzięki usłudze prowadzenia ewidencji przychodów, przedsiębiorcy mogą mieć pewność, że ich dokumentacja jest prowadzona w sposób rzetelny i zgodny z obowiązującymi przepisami prawa."
                         },
                         {
                             "title": "Sporządzanie i konsolidacja sprawozdań finansowych",
@@ -228,15 +228,15 @@
                     "panels": [
                         {
                             "title": "Bookkeeping",
-                            "text" : "Bookkeeping is one of the basic services offered by accounting offices. As part of this service, Savatax accounting office deals with full accounting (commercial books), revenue and expense ledger (KPiR), and flat-rate revenue records (EPR). Savatax accounting office also deals with the settlement of corporate income tax (CIT), personal income tax (PIT), lump-sum income tax, and tax card."
+                            "text" : "Bookkeeping is one of the basic services offered by accounting offices. As part of this service, Savatax accounting office deals with full accounting (commercial books), revenue and expense ledger (KPiR), and flat-rate revenue records (EPR)."
                         },
                         {
                             "title": "Revenue and expense ledger (KPiR)",
-                            "text" : "Revenue and expense ledger upkeep is another service offered by Savatax accounting office. This ledger is maintained by entrepreneurs who do not exceed certain revenue limits. Savatax accounting office deals with keeping records of revenues and tax settlements, as well as preparing tax returns"
+                            "text" : "Revenue and expense ledger upkeep is another service offered by Savatax accounting office. This ledger is maintained by entrepreneurs who do not exceed certain revenue limits. Savatax accounting office deals with keeping records of revenues and tax settlements."
                         },
                         {
                             "title": "Keeping records of revenues and tax settlements",
-                            "text" : "Savatax accounting office deals with keeping records of revenues and tax settlements, as well as preparing tax returns. Revenue records are documentation that allows for tracking a company’s income. Savatax accounting office deals with keeping records of revenues and tax settlements. As part of this service, Savatax accounting office also deals with preparing tax returns. Thanks to the service of keeping records of revenues and tax settlements, entrepreneurs can be sure that their documentation is kept in a reliable and compliant manner with applicable law."
+                            "text" : "Savatax accounting office deals with keeping records of revenues and tax settlements. Revenue records are documentation that allows for tracking a company's income. Savatax accounting office deals with keeping records of revenues and tax settlements. Thanks to the service of keeping records of revenues and tax settlements, entrepreneurs can be sure that their documentation is kept in a reliable and compliant manner with applicable law."
                         },
                         {
                             "title": "Preparing and consolidating financial statements",

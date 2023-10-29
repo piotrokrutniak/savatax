@@ -55,7 +55,7 @@ function OfferPanel({slide, index, activeIndex, image}:{slide: ServiceSlide, ind
             <Image loading="eager" layout="fill" objectFit="cover" src={image} alt={slide.title} className="relative w-full h-full"/>
         </div>
         <div className="flex flex-col text-white gap-4">
-            <h1 className="text-3xl md:text-4xl font-bold">{slide.title}</h1>
+            <h2 className="text-3xl md:text-4xl font-bold">{slide.title}</h2>
             <ul className="text-lg sm:text-xl flex flex-col gap-2 ">
             {slide.bullets.map((x, key) => <li className="flex place-items-start" key={key}><BsArrowRightShort className="h-8 w-8 pb-1 shrink-0"/> {x}</li>)}
             </ul>

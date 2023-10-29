@@ -8,8 +8,8 @@ import { CookiesPopUp } from './components/generic/cookiesPopUp'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Savatax',
-  description: 'Bookkeeping and accounting services in Warsaw.',
+  title: 'Savatax - Bookkeeping and accounting services in Warsaw',
+  description: 'At Savatax, our team of English-speaking professionals offers bookkeeping and accounting services in Warsaw.',
 }
 
 export default function RootLayout({children}:{children: React.ReactNode}) {
