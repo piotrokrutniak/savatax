@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import SplashArt from '../../public/media/15.jpg'
+import SplashArtFHD from '../../public/media/15-fhd.webp'
 import { FaBalanceScale, FaBook,  FaChartPie, FaEnvelope, FaFileInvoiceDollar, FaPiggyBank } from 'react-icons/fa'
 import Localization from "@/app/localization.json"
 import { EmailForm } from './components/generic/emailForm'
@@ -13,7 +14,7 @@ export default function HomePage({language = "en"}:{language: keyof typeof Local
             <LandingPanel countryCode={language}/>
         </div>
         <div className="w-full h-screen-1/2 top-0 z-0">
-          <Image loading="eager" layout="fill" objectFit="cover" placeholder="blur" src={SplashArt} alt="Accounting documents splash art" className="opacity-30 absolute w-full h-full"/>
+          <Image loading="eager" layout="fill" objectFit="cover" placeholder="blur" src={SplashArtFHD} alt="Accounting documents splash art" className="opacity-30 absolute w-full h-full"/>
         </div>
       </section>
       <section id="summary-section" className='max-w-6xl p-4 sm:p-8 mx-auto w-full justify-center md:px-16 rounded-xl flex flex-col gap-5'>
